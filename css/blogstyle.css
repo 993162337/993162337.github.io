@@ -31,7 +31,8 @@
     width: 254px;
     height: 80px;
     display: block;
-    background: url("img/logo.jpg") no-repeat ;
+    background-image: url("img/logo.jpg");
+    background-repeat: no-repeat ;
     position: relative;
 }
 
