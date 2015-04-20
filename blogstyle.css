@@ -367,6 +367,10 @@
 .element_left img:hover{
     opacity: 0.8;
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
 }
 
 .element_right{
@@ -513,6 +517,17 @@
     margin-top: 3px;
     opacity: 0;
     transition: 0.2s ease;
+}
+
+.flist a{
+    transition: 0.2s ease;
+
+}
+
+.flist a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: crimson;
 }
 
 .flist img:hover{
