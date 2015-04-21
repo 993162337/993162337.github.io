@@ -679,6 +679,7 @@
     height: 55px;
     background:url("img/button.jpg") no-repeat;
     transition: 0.4s ease;
+    border-radius:  0px 5px 0px 0px;
 }
 
 #back_top:hover{
@@ -691,7 +692,7 @@
     height: 55px;
     background: url("img/button.jpg") no-repeat 0 -55px;
     transition: 0.4s ease;
-
+    border-radius: 0px 0px 5px 0px;
 }
 
 #download:hover{
