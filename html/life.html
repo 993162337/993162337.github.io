@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>LifeStyle</title>
+    <link rel="stylesheet" href="../blogstyle.css" type="text/css"/>
+    <style>
+        #lcontainer{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-top: 5px solid #333;
+        }
+        #lcontent{
+            width: 80%;
+            height: 800px;
+            margin: 0 auto;
+            background: #ddd;
+        }
+        #lcontent .control{
+            margin-top: 30px;
+            margin-bottom:10px;
+        }
+        #lcontent ul{
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        #lcontent ul li{
+            margin-left: 2.5%;
+            margin-top: 2.5%;
+            width: 30%;
+            /*height: 300px;*/
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+        #lcontent ul li img{
+            height: 100%;
+            left: -30%;
+            z-index: -1;
+        }
+        #lcontent ul li span {
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-size:30px;
+            line-height: 100%;
+            color: #fff;
+            position: absolute;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+<div id="ihead" class="myhead">
+    <div id="logo">
+        <a href="#"></a>
+    </div>
+    <div id="nav" class="txt">
+        <a href="index.html">首页</a>
+        <a href="html/about_me.html">关于我</a>
+        <a href="#">生活</a>
+        <a href="html/study.html">学习天地</a>
+        <a href="#">慢生活</a>
+        <a href="#">留言板</a>
+    </div>
+</div>
+<div id="lcontainer">
+
+    <div id="lcontent">
+        <div class="control">
+            <span>生活存照</span>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="../img/crossroad.jpg" alt=""/>
+                    <span>生活趣事</span>
+                </a>
+            </li>
+            <li><a href=""><img src="../img/crossroad1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="../img/crossroad.jpg" alt=""/></a></li>
+            <li><a href=""><img src="../img/crossroad1.jpg" alt=""/></a></li>
+            <li><a href=""><img src="../img/crossroad.jpg" alt=""/></a></li>
+            <li><a href=""><img src="../img/crossroad1.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

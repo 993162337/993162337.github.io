@@ -1,0 +1,246 @@
+
+body{
+	background: #ddd;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	overflow: hidden;
+	-webkit-font-smoothing:antialiased;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+.clr{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+.st-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: "microsoft yahei";
+}
+
+.st-container > input,
+.st-container >a{
+	width: 20%;
+	height: 44px;
+	line-height: 44px;
+	position: fixed;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.st-container > input{
+	opacity: 0;
+	z-index: 1000;
+}
+
+.st-container > a{
+	z-index: 10;
+	font-weight: 700;
+	font-size: 16px;
+	background: #777;
+	text-align: center;
+	padding: 15px;
+	color: white;
+	box-shadow: 0 -1px 1px rgba(151,151,151,0.8);
+	-webkit-box-shadow: 0 -1px 1px rgba(151,151,151,0.8);
+	-moz-box-shadow: 0 -1px 1px rgba(151,151,151,0.8);
+	-ms-box-shadow: 0 -1px 1px rgba(151,151,151,0.8);
+	-o-box-shadow: 0 -1px 1px rgba(151,151,151,0.8);
+}
+
+#control-1,#control-1 + a{
+	left: 0;
+}
+
+#control-2,#control-2 + a{
+	left: 20%;
+}
+
+#control-3,#control-3 + a{
+	left: 40%;
+}
+
+#control-4,#control-4 + a{
+	left: 60%;
+}
+
+#control-5,#control-5 + a{
+	left: 80%;
+}
+
+.st-container input:checked + a,
+.st-container input:checked:hover + a{
+	background: #333;
+}
+
+.st-container input:checked +a:after{
+	content: "";
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 20px solid transparent;
+	border-bottom-color: #333;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.st-container input:hover + a{
+	background: #555;
+}
+
+/*container*/
+
+
+.st-scroll,
+.st-panel{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #ddd;
+}
+
+.st-color{
+	background: #bbb;
+}
+
+.st-scroll{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition:all 0.6s ease-in-out;
+}
+
+.st-panel{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	-webkit-backface-visibility:hidden;
+}
+
+#control-1:checked ~.st-scroll{
+	-webkit-transform:translateY(-0%);
+	-moz-transform:translateY(-0%);
+	-o-transform:translateY(-0%);
+	-ms-transform:translateY(-0%);
+	transform:translateY(-0%);
+}
+
+#control-2:checked ~.st-scroll{
+	-webkit-transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+
+#control-3:checked ~.st-scroll{
+	-webkit-transform:translateY(-200%);
+	-moz-transform:translateY(-200%);
+	-o-transform:translateY(-200%);
+	-ms-transform:translateY(-200%);
+	transform:translateY(-200%);
+}
+
+#control-4:checked ~.st-scroll{
+	-webkit-transform:translateY(-300%);
+	-moz-transform:translateY(-300%);
+	-o-transform:translateY(-300%);
+	-ms-transform:translateY(-300%);
+	transform:translateY(-300%);
+}
+
+#control-5:checked ~.st-scroll{
+	-webkit-transform:translateY(-400%);
+	-moz-transform:translateY(-400%);
+	-o-transform:translateY(-400%);
+	-ms-transform:translateY(-400%);
+	transform:translateY(-400%);
+}
+
+.st-color .st-desc{
+	width: 200px;
+	height:200px;
+	position: absolute;
+	background: #ddd;
+	left: 50%;
+	margin-left: -100px;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-moz-transform:translateY(-50%) rotate(45deg);
+	-o-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+}
+
+.st-desc{
+	width: 200px;
+	height:200px;
+	position: absolute;
+	background: #bbb;
+	left: 50%;
+	margin-left: -100px;
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	-moz-transform:translateY(-50%) rotate(45deg);
+	-o-transform:translateY(-50%) rotate(45deg);
+	-ms-transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
+}
+
+.st-panel h1{
+	text-align: center;
+	margin-top: 250px;
+	z-index: 100000;
+	font-size: 60px;
+	text-shadow:0px 1px 1px #fff;
+}
+
+.st-panel p{
+	display: inline-block;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: center;
+	text-shadow:0px 1px 1px #fff;
+
+}
+
+[data-icon]:after{
+	content: attr(data-icon);
+	font-size: 90px;
+	font-family: "Webdings";
+	color: #fff;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	/*background: red;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:rotate(-45deg) translateY(-40%);
+	-webkit-transform:rotate(-45deg) translateY(-40%);
+	-moz-transform:rotate(-45deg) translateY(-40%);
+	-o-transform:rotate(-45deg) translateY(-40%);
+	-ms-transform:rotate(-45deg) translateY(-40%);
+	transform:rotate(-45deg) translateY(-40%);
+}
+
