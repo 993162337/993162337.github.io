@@ -598,7 +598,7 @@
         float: left;
         width: 100%;
         font-size: 20px;
-        /*font-weight: normal;*/
+        font-weight: bold;
         background: #333;
         color: #fff;
     }
