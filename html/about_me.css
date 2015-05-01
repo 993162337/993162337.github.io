@@ -99,13 +99,12 @@ table{
 }
 
 .down_it{
-    margin-top: 400px;
+    top: 80%;
     /*margin-left: 50%;*/
-    right:7.6%;
+    right:0%;
     height: 110px;
     width: 50px;
     position: fixed;
-    margin-right: 50px;
 }
 
 .down_it ul{
@@ -169,7 +168,7 @@ table{
     }
 
     .down_it{
-        right: 0;
+        right: 0%;
     }
 
     .will{
@@ -179,4 +178,6 @@ table{
     .table_content,.table_self p,h4,.info td,.table_foot td, .table_head td{
         font-size: 20px;
     }
+
+
 }
