@@ -4,7 +4,9 @@
     font-family: Microsoft Yahei, serif;
 }
 
-
+img{
+    border: 0;
+}
 
 .txt::selection{
     color:#fff;
