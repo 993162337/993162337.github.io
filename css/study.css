@@ -1,0 +1,48 @@
+
+#sbody{
+    width:100%;
+    height:auto;
+    border-top:5px solid #444;
+}
+
+#study-container{
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+
+}
+
+img{
+    width: 100%;
+    height:auto;
+}
+
+#study-container ul{
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+#study-container ul li{
+    float:left;
+    margin:1%;
+    overflow: hidden;
+    width:48%;
+    height:200px;
+    -webkit-box-shadow: 0 0 5px #cccccc;
+    -moz-box-shadow: 0 0 5px #cccccc;
+    -o-box-shadow: 0 0 5px #cccccc;
+    -ms-box-shadow: 0 0 5px #cccccc;
+}
+
+#study-list li a{
+    text-align: center;
+    color: #333;
+}
+
+#study-list img{
+    width: 100%;
+    height: auto;
+}
+
+#study-list
